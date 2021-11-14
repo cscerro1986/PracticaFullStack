@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+
+    <title>Document</title>
+</head>
+<body class="container-fluid">
+    
+  {{>headers}}
+    {{!-- <header>      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          
+        <div class="container-fluid collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-left">
+              <li class="nav-item">
+                <img src="img/logoPatagonia.png"  class ="imgLogo" alt="" >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/MostrarMesas.html">Mesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/cargarPedido.html">Cargar Pedido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/listaProductos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/estadisticas.html">Estadisticas</a>
+              </li>
+            </ul>  
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">{{nombre}}</a>
+                </li>                      
+            </ul>
+        </div>              
+      </nav>
+
+    </header> --}}
+
+    <!-- #region DISEÑO DE MESAS-->
+    <div class=" paginaPrincipal intro container-fluid">
+      <div class="mesas">
+        <div class="row laMesa">
+          <div class="col col-5 primerPiso">
+            <div>
+              <h3>Primer Piso</h3>
+            </div>
+            <div class="row">
+              <div class="col col-4">
+                <button class="btnMesa" data-bs-toggle="modal" data-bs-target="#myModal">Mesa 1</button>
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-tittle">Mesa 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">X</button>
+                      </div>
+                      <div class="modal-body">
+                       <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">Producto</th>
+                              <th scope="col">Precio Unitario</th>
+                              <th scope="col">Cantidad</th>
+                              <th scope="col">Total</th>
+                            </tr> 
+                          </thead> 
+                          <tbody>
+                            
+                            <tr>
+                              <td colspan="1">
+                                Doble cuarto libra con queso
+                              </td>                
+                              <td>
+                                <div class="precio">
+                                  145.32    
+                                </div>
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4
+                                </div>  
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4123.32
+                                </div>  
+                              </td>
+                              
+                            </tr> 
+                            <tr>
+                              <td colspan="1">Doble cuarto libra con queso</td>                
+                              <td>
+                                <div class="precio">
+                                  145.32    
+                                </div>
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4
+                                </div>  
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4123.32
+                                </div>  
+                              </td>
+                              
+                            </tr> 
+                            <tr>
+                              <td colspan="1">Doble cuarto libra con queso</td>                
+                              <td>
+                                <div class="precio">
+                                  145.32    
+                                </div>
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4
+                                </div>  
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4123.32
+                                </div>  
+                              </td>
+                              
+                            </tr> 
+                            <tr>
+                              <td colspan="1">Doble cuarto libra con queso</td>                
+                              <td>
+                                <div class="precio">
+                                  145.32    
+                                </div>
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4
+                                </div>  
+                              </td>
+                              <td>
+                                <div class="cantidad">
+                                  4123.32
+                                </div>  
+                              </td>
+                              
+                            </tr> 
+                            <tr>
+                              <td colspan="2">
+                                <button class="btn btn-success">
+                                  Cerra Mesa
+                                </button>
+                              </td>
+                              
+                              <td>
+                                Total 
+                              </td>
+                              <td >
+                                <b>1452.43</b>
+                              </td>
+                            </tr>
+                         </tbody>
+                       </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa" >Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+            </div>
+            <div class="row filaMesas">
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+            </div>
+            <div class="row filaMesas">
+              <div class="col col-3">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-5">
+                <button class="btnMesaLarga">Mesa 1</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-5 primerPiso">
+            <div>
+              <h3>Segundo Piso</h3>
+            </div>
+            <div class="row">
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+            </div>
+            <div class="row filaMesas">
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+            </div>
+            <div class="row filaMesas">
+              <div class="col col-3">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-4">
+                <button class="btnMesa">Mesa 1</button>
+              </div>
+              <div class="col col-5">
+                <button class="btnMesaLarga">Mesa 1</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- #endregion DISEÑO DE MESAS-->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="../js/bootstrap.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</html>

@@ -1,0 +1,218 @@
+
+body
+{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+}
+
+.botonAgregar
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.imgLogo{
+    width: 250px;
+    padding: 0.3rem;
+}
+
+.footer
+{   
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    background: rgb(85, 72, 158);    
+}
+
+.nav-item
+{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.pedidos{
+    background: rgb(143, 245, 198);
+}
+
+.mozo{
+    background: rgb(250, 50, 50);
+}
+
+.intro{
+    background : linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.5)), url("../img/hambur3.jpg");
+    min-height: 90vh;
+    height: 90%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:repeat;
+    color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+
+.tituloMenu{    
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1.5rem;
+    color: rgb(61, 53, 50);
+    
+}
+
+.menuSti
+{
+    top: 0;
+    position: sticky;
+    background-color: aqua;
+}
+
+.tablaBoton{
+    
+    display: inline-flex;
+    padding: 1rem;
+}
+
+.reducirBoton {
+
+    padding: 0.3rem;
+    font-weight: 300;
+    height: 2.5rem;
+}
+
+.precio{
+    font-weight: 500;
+    padding: .5rem;
+}
+
+
+td img
+{
+    height: 7rem;
+    width: auto;
+}
+tr{
+    vertical-align: middle;
+}
+
+.table td
+{
+    display:table-cell ;
+    vertical-align:middle;
+    font-weight: 600;
+    font-size: large;
+}
+
+.categoria{
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+table{
+    width: 100%;
+}
+
+.btn
+{
+    display:inherit;
+}
+
+.btnAgregar{
+    width: 150px; 
+}
+
+.botonFijoFinalizar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.botonFijoFinalizar button
+{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 182, 182);
+
+}
+.botonFijoFinalizar button:hover
+{   
+    background: rgb(255, 255, 255);
+    color: rgb(80, 4, 4);
+
+}
+
+
+/* MESAS */
+
+.seccionMesas{
+    display: flex;
+    background: rgb(182, 86, 86);
+    
+}
+
+.laMesa
+{
+    justify-content: space-between;
+}
+
+.primerPiso
+{
+    background: rgb(109, 148, 124);
+    border-radius: 20px;
+    /* opacity: 85%; */
+    height: 60vh;
+    padding: 2rem;
+    margin: 4rem;
+
+}
+
+.TituloTh
+{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.tdPrecio
+{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.btnMesa
+{
+    background: #000;
+    color: chartreuse;
+    height: 4rem;
+    width: 6rem; 
+    border-radius: 15px;
+}   
+
+
+
+.btnMesa:hover
+{
+    background: rgb(198, 5, 5);
+    color: lightblue;
+}
+
+.btnMesaLarga
+{
+    
+    border-radius: 15px;
+    background: #000;
+    color: chartreuse;
+    height: 4rem;
+    width: 9rem;  
+}
+
+.filaMesas
+{
+    padding-top: 4rem;
+}
+
+.footer button
+{
+    margin: 15px;
+    padding: 1rem;
+}
